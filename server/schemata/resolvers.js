@@ -1,13 +1,22 @@
-// const { models } = require('../models');
+const { User, Book } = require('../models');
 
 const resolvers = {
     Query: {
-        query1: (/* Some params */) => {/* Some Function */},
-        query2: (/* Some params */) => {/* Some Function */},
+        me: () => {},
     },
     Mutation: {
-        mutation1: (/* Some params */) => {/* Some Function */},
-        mutation2: (/* Some params */) => {/* Some Function */},
+        login: async (parent, { email, password }) => {
+
+        },
+        addUser: async (parent, { username, email, password }) => {
+
+        },
+        saveBook: async (parent, { authors, description, title, bookId, image, link }) => {
+
+        },
+        removeBook: async (parent, { bookId }) => {
+            
+        }
     }
 };
 
