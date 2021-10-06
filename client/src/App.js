@@ -25,6 +25,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+console.log(httpLink);
+
 function App() {
   return (
     <ApolloProvider client={client}>
